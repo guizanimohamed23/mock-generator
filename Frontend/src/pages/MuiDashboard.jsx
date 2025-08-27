@@ -26,6 +26,12 @@ const RESOURCES = {
     { method: 'POST', route: '/api/users', description: 'Create user' },
     { method: 'PUT', route: '/api/users/:id', description: 'Update user' },
     { method: 'DELETE', route: '/api/users/:id', description: 'Delete user' },
+    { method: 'GET', route: '/api/messages/inbox', description: 'Get inbox messages' },
+    { method: 'GET', route: '/api/messages/sent', description: 'Get sent messages' },
+    { method: 'POST', route: '/api/messages', description: 'Send a message' },
+    { method: 'POST', route: '/api/messages/:id/read', description: 'Mark message as read' },
+    { method: 'GET', route: '/api/analytics/overview', description: 'Get analytics overview' },
+    { method: 'GET', route: '/api/analytics/activity', description: 'Get activity over time' },
   ],
   books: [
     { method: 'GET', route: '/api/books', description: 'List books' },
@@ -33,6 +39,8 @@ const RESOURCES = {
     { method: 'POST', route: '/api/books', description: 'Create book' },
     { method: 'PUT', route: '/api/books/:id', description: 'Update book' },
     { method: 'DELETE', route: '/api/books/:id', description: 'Delete book' },
+    { method: 'POST', route: '/api/mocks/generate', description: 'Generate mock for book endpoint' },
+    { method: 'GET', route: '/api/mocks/one', description: 'Get one mock for book endpoint' },
   ],
 };
 
